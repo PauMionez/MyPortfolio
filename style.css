@@ -375,27 +375,27 @@ body {
 /* Below 600px: switch to 1 column layout */
 @media (max-width: 600px) {
   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
-    padding: 20px;
+    margin-top: 0;
+    padding: 0 10px;
   }
   
   .profile-body {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .profile-main-row {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 10px;
   }
 
   .loc{
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .profile-left,
@@ -449,13 +449,25 @@ body {
   }
 
   .button-group a {
-    width: 130px;
+    width: auto;
+    min-width: 100px;
     height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  .button-group i {
+    font-size: 16px;
+    padding: 6px 12px;
   }
 
   .badge {
     text-align: center; 
     margin-top: 20px;
+  }
+  .badge a {
+    font-size: 14px;
+    padding: 6px 12px;
   }
 }
 
