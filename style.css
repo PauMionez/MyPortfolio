@@ -374,6 +374,15 @@ body {
 
 /* Below 600px: switch to 1 column layout */
 @media (max-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  
   .profile-body {
     flex-direction: column;
     align-items: center;
