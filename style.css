@@ -304,7 +304,74 @@ body {
   color: #fff;
 }
 
+.projects {
+  border: 1px solid gray; 
+  width: 500px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px 0 0 0px;
+}
 
+.project-items{
+  display: flex;
+  flex-direction: row;    
+  gap: 6px;              
+  flex-wrap: wrap;  
+}
+
+.first-project{
+  border: 1px solid gray;
+  padding: 1px 12px;
+  border-radius: 12px;
+  background-color: #111;
+  color: #fff;
+  margin: 5px 0 0 0px;
+  justify-content: left;
+}
+
+.first-project h5 {
+  margin: 10px 0px 0px 0px;
+}
+.first-project p {
+ text-align: left;
+  margin: 0px 0px 0px 0px;
+}
+.first-project h6{
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  height: 10px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border: none;
+  border-radius: 10%;
+  background: black;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+  vertical-align: text-top;
+}
+
+.myCV-Resume{
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border: none;
+  border-radius: 10%;
+  background: black;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+}
 
 @media (max-width: 850px) and (min-width: 601px) {
   .profile-body {
@@ -315,6 +382,7 @@ body {
 
   /* Only shrink aboutme and tech-stack */
   .aboutme,
+  .projects,
   .tech-stack {
     width: calc(100% - 45px); /* subtract right panel width + gap */
     max-width: 100%;
@@ -402,12 +470,22 @@ body {
   .profile-right,
   .aboutme,
   .tech-stack,
+  .projects,
   .experience,
   .contact-box {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    /* margin-bottom: 20px; */
+    /* margin-bottom: 20px;  */
+  }
+
+  .tech-stack{
+    margin-bottom: -15px; 
+  }
+  
+  .projects{
+    margin-top: 20px;
+    margin-bottom: -15px; 
   }
 
   .profile-info img {
